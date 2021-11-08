@@ -1,10 +1,36 @@
+@import "src/colors.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $primary-text-color;
+}
 body {
+  min-height: 100vh;
+  height: 100%;
+  background-color: $primary-background-color;
   margin: 0;
   font-family: 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+textarea, input {
+  outline: none;
+  font-family: inherit;
+}
+#root {
+  min-height: 100vh;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

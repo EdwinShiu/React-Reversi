@@ -1,0 +1,51 @@
+@import "src/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    background-color: $primary-background-color-alt;
+    width: 400px;
+    height: 500px;
+    transform: translateY(-10%);
+  
+    .form_title {
+      font-size: 1.75rem;
+      margin: 4rem 0;
+    }
+
+    .form_input {
+      width: 200px;
+      padding: 0.75rem 0.5rem 0.25rem 0.5rem;
+      font-size: 18px;
+      margin: 0.75rem;
+      border: none;
+      border-bottom: 1px solid $unfocus-color;
+      transition: all 0.2s ease-in-out;
+      background-color: $input-background-color;
+      
+      &:focus {
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+    
+    .form_button {
+      color: $secondary-text-color;
+      margin-top: auto;
+      margin-bottom: 6rem;
+      font-size: 18px;
+      background-color: $primary-color;
+      width: 160px;
+      padding: 0.75rem 0;
+    }
+  }
+}

@@ -1,9 +1,8 @@
 import styles from "./GameRoom.module.scss";
 
 const GameRoom = () => {
-
   return (
-    <div className={styles.container}>
+    <div>
       GameRoom
     </div>
   );

@@ -1,27 +1,12 @@
 import styles from "./App.module.scss";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { BaseRoutes } from "./types/constants/routes";
-import GameRoom from "./pages/GameRoom";
-import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <div className={styles.container}>
-      <Routes>
-
-        <Route
-          path={BaseRoutes.ROOM}
-        >
-          <GameRoom />
-        </Route>
-
-        <Route
-          path={BaseRoutes.HOME}
-        >
-          <HomePage />
-        </Route>
-        
-      </Routes>
+      <MainPage />
     </div>
   );
 }
